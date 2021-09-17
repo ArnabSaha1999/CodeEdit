@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CodeEdit</title>
+
+</head>
+<body>
+    <div class="row">  <!-- this is where all the code will be -->
+        <div class="col-2 editor" >  <!--editor area-->
+            <div>
+                <label class="label html active" for="html-code"> HTML</label> 
+                <textarea name="" id="html-code" cols="30" rows="10" class="code-area"></textarea> <!--text area for html code-->
+            </div>
+            <div>
+                <label class="label css" for="css-code">CSS</label>
+                <textarea name="" id="css-code" cols="30" rows="10" class="code-area"></textarea> <!--text area for css code-->
+            </div>
+            <div>
+                <label class="label js" for="js-code">JS</label>
+                <textarea name="" id="js-code" cols="30" rows="10" class="code-area"></textarea> <!--text area for js code-->
+            </div>
+        </div>
+        <div class="col-1">
+            <iframe frameborder="1" id="output"></iframe> <!--output tab-->
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
